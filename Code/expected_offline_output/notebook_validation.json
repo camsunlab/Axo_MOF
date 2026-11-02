@@ -1,0 +1,10 @@
+{
+  "executor": "IPython InteractiveShell with rich-output capture",
+  "python_environment": "clean pinned Python 3.12.14 environment",
+  "code_cells": 5,
+  "executed_all_cells": true,
+  "error_outputs": 0,
+  "elapsed_seconds": 18.978546358997846,
+  "jupyter_frontend_verified": false,
+  "kernel_transport_limitation": "TCP and IPC socket binding denied by execution host; no external-process Jupyter kernel was validated."
+}

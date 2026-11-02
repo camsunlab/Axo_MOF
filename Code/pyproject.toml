@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools==84.1.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axo-mof"
+version = "0.1.0"
+description = "Offline analysis and hardware-specific source code for Axo MOF experimentation"
+readme = "README_offline.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==2.3.5",
+  "scipy==1.17.0",
+  "pandas==2.2.3",
+  "scikit-learn==1.8.0",
+  "matplotlib==3.10.8",
+  "python-ternary==1.0.8",
+]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab==4.6.4", "ipykernel==7.4.0", "nbclient==0.11.0", "nbformat==5.11.1"]
+
+[project.scripts]
+axo-offline-demo = "science_jubilee.offline_demo:main"
+axo-simulate = "science_jubilee.simulation.cli:main"
+
+[project.urls]
+Repository = "https://github.com/camsunlab/Axo_MOF"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["science_jubilee*"]
+
+[tool.setuptools.package-data]
+science_jubilee = ["**/*.json", "**/*.csv", "**/*.txt", "**/*.yml", "**/*.g", "**/*.md"]

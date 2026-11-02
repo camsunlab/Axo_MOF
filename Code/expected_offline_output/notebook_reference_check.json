@@ -1,0 +1,11 @@
+{
+  "reference_numerical_values": "passed",
+  "optical_gates": "passed",
+  "kinetic_objective": "passed",
+  "scheduling_decision": "passed",
+  "proposal_constraints": "passed",
+  "source_integrity": "passed",
+  "parameter_rtol": 0.001,
+  "parameter_atol": 1e-06,
+  "R2_atol": 1e-05
+}
