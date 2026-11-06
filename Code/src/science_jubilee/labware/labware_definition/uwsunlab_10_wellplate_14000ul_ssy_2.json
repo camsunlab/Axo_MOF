@@ -1,0 +1,181 @@
+{
+    "ordering": [
+        [
+            "A1",
+            "B1"
+        ],
+        [
+            "A2",
+            "B2"
+        ],
+        [
+            "A3",
+            "B3"
+        ],
+        [
+            "A4",
+            "B4"
+        ],
+        [
+            "A5",
+            "B5"
+        ]
+    ],
+    "brand": {
+        "brand": "UWSUNLab",
+        "brandId": []
+    },
+    "metadata": {
+        "displayName": "UWSUNLab 10 Well Plate 14000 \u00b5L",
+        "displayCategory": "wellPlate",
+        "displayVolumeUnits": "\u00b5L",
+        "tags": []
+    },
+    "dimensions": {
+        "xDimension": 127.5,
+        "yDimension": 85.5,
+        "zDimension": 81
+    },
+    "wells": {
+        "A1": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 16.5,
+            "y": 63.5,
+            "z": 4.99
+        },
+        "B1": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 16.5,
+            "y": 22,
+            "z": 4.99
+        },
+        "A2": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 40.12,
+            "y": 63.5,
+            "z": 4.99
+        },
+        "B2": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 40.12,
+            "y": 22,
+            "z": 4.99
+        },
+        "A3": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 63.74,
+            "y": 63.5,
+            "z": 4.99
+        },
+        "B3": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 63.74,
+            "y": 22,
+            "z": 4.99
+        },
+        "A4": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 87.36,
+            "y": 63.5,
+            "z": 4.99
+        },
+        "B4": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 87.36,
+            "y": 22,
+            "z": 4.99
+        },
+        "A5": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 110.98,
+            "y": 63.5,
+            "z": 4.99
+        },
+        "B5": {
+            "depth": 80,
+            "totalLiquidVolume": 14000,
+            "shape": "circular",
+            "diameter": 20,
+            "x": 110.98,
+            "y": 22,
+            "z": 4.99
+        }
+    },
+    "groups": [
+        {
+            "metadata": {
+                "wellBottomShape": "flat"
+            },
+            "wells": [
+                "A1",
+                "B1",
+                "A2",
+                "B2",
+                "A3",
+                "B3",
+                "A4",
+                "B4",
+                "A5",
+                "B5"
+            ]
+        }
+    ],
+    "parameters": {
+        "format": "irregular",
+        "quirks": [],
+        "isTiprack": false,
+        "isMagneticModuleCompatible": false,
+        "loadName": ""
+    },
+    "namespace": "custom_beta",
+    "version": 1,
+    "schemaVersion": 2,
+    "cornerOffsetFromSlot": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
+    "manual_offset": {
+        "5": [
+            [
+                273.0,
+                231.0
+            ],
+            [
+                179.0,
+                231.0
+            ],
+            [
+                179.0,
+                272.0
+            ]
+        ]
+    }
+}

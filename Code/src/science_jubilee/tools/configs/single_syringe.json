@@ -1,0 +1,8 @@
+{
+    "unit" : "milliliters",
+    "max_volume": 11.3748,
+    "min_volume": 0,
+    "min_range": 0,
+    "max_range": 165,
+    "mm_to_ml": 14.5057
+}

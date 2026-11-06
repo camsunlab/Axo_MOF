@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "science_jubilee"
+version = "0.3.2+axo"
+description = "Local Axo_MOF fork of science-jubilee (Double_Syringe, Vacuum_Gripper, Oceandirect_axo, optimization, ...)"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
