@@ -85,43 +85,75 @@ The platform is organized into **four main abstraction layers**:
 
 ### Prerequisites
 
-- **Python**: 3.8 or higher
+- **OS**: Windows 64-bit (the bundled OceanDirect spectrometer driver is a Windows x64 DLL)
+- **Python**: 3.10 or higher (developed on 3.14)
+- **[uv](https://docs.astral.sh/uv/)** (recommended) or pip
+- **Access to the private `camsunlab/ClownFish` repository** (Ocean Optics SDK; see step 4)
 - **Hardware**: Modified Jubilee 3D printer with Duet 3 controller
 - **Network**: Local network connection to Jubilee (default: 192.168.1.2)
 
-### Dependencies
-
-Install required Python packages:
-
-```bash
-# Core scientific computing
-pip install numpy scipy scikit-learn pandas
-
-# Visualization
-pip install matplotlib python-ternary
-
-# Optional: Jupyter for notebook interface
-pip install jupyter
-```
-
 ### Setup
 
-1. **Clone the repository**:
+The commands below are for **Git Bash**, run from the `Axo_MOF` folder unless stated otherwise.
+
+1. **Clone both repositories side by side**:
    ```bash
-   git clone <repository-url>
+   cd ~/Documents/GitHub
+   git clone https://github.com/camsunlab/Axo_MOF.git
+   git clone https://github.com/camsunlab/ClownFish.git   # private: Ocean Optics SDK
    cd Axo_MOF
    ```
-
-2. **Install the package** (optional, for development):
-   ```bash
-   cd Code
-   pip install -e .
+   Expected layout:
+   ```
+   GitHub/
+   ├── Axo_MOF/
+   └── ClownFish/
    ```
 
-3. **Verify installation**:
+2. **Create a virtual environment**:
    ```bash
-   python -c "import numpy, scipy, sklearn, matplotlib; print('✓ Dependencies OK')"
+   uv venv .venv
    ```
+
+3. **Install the Python dependencies**. `requirements.txt` also installs the lab's modified
+   `science_jubilee` from `Code/src` in editable mode, so edits there take effect after a kernel restart:
+   ```bash
+   uv pip install --python .venv/Scripts/python.exe -r requirements.txt
+   ```
+   > ⚠️ Do **not** `pip install science-jubilee` from PyPI. That upstream version lacks the Axo tools
+   > (`Double_Syringe`, `Vacuum_Gripper`, `Oceandirect_axo`, …) and will shadow the local copy.
+
+4. **Install the Ocean Optics spectrometer SDK (`oceandirect`)**. This SDK is proprietary, was
+   received from Ocean Insight, and is not on PyPI. The lab keeps it in the ClownFish repository.
+   Its `sdk_properties.py` expects the DLL at `oceandirect/lib/OceanDirect.dll`, so copy the files
+   into the venv in that layout:
+   ```bash
+   SP=.venv/Lib/site-packages/oceandirect; mkdir -p $SP/lib
+   cp ../ClownFish/{__init__,OceanDirectAPI,od_logger,sdk_properties}.py $SP/
+   cp ../ClownFish/OceanDirect.dll $SP/lib/
+   ```
+   Without this step, importing `science_jubilee.tools.Oceandirect_axo` raises
+   `ImportError: The Ocean Optics SDK is not installed`. Repeat this step whenever you recreate
+   `.venv` or update ClownFish.
+
+5. **Verify the installation**:
+   ```bash
+   .venv/Scripts/python.exe -c "from science_jubilee.tools.Double_Syringe import DoubleSyringe; from science_jubilee.tools.Oceandirect_axo import Spectrometer; from oceandirect.OceanDirectAPI import OceanDirectAPI; print('OK, spectrometers found:', OceanDirectAPI().find_usb_devices())"
+   ```
+
+6. **Run the notebooks**. Open the notebooks in `Code/` (e.g. `mof_synthesis.ipynb`), select the
+   `.venv` Python as the kernel, and restart the kernel after any install change.
+
+<details>
+<summary>Using plain pip instead of uv</summary>
+
+```bash
+python -m venv .venv
+source .venv/Scripts/activate
+pip install -r requirements.txt
+```
+Then do step 4 as above.
+</details>
 
 ---
 
