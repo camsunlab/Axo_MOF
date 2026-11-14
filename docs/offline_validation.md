@@ -1,3 +1,7 @@
+> Historical report: the source revision and validation scope below are retained.
+> This is not a current audit of the integrated ZIF-8 notebook. See
+> [revision_code_availability.md](revision_code_availability.md) for the present changes and remaining limits.
+
 # Offline validation report
 
 Validation recorded: 2026-10-26 00:18 UTC.

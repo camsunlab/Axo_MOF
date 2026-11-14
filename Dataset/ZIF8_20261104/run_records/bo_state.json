@@ -1,0 +1,270 @@
+{
+  "policy": "reaction-aware",
+  "phase": 2,
+  "phase_name": "bo_2vials_5min",
+  "iteration": 4,
+  "phase_batches": {
+    "0": 1,
+    "1": 0,
+    "2": 3,
+    "3": 0
+  },
+  "X": [
+    [
+      0.4,
+      4.9,
+      2.7
+    ],
+    [
+      7.9,
+      0.1,
+      0.0
+    ],
+    [
+      0.1,
+      0.1,
+      7.8
+    ],
+    [
+      3.8,
+      0.5,
+      3.7
+    ],
+    [
+      4.3,
+      3.7,
+      0.0
+    ],
+    [
+      4.6,
+      3.4,
+      0.0
+    ],
+    [
+      2.8,
+      3.5,
+      1.7
+    ],
+    [
+      4.2,
+      3.8,
+      0.0
+    ],
+    [
+      3.0,
+      4.9,
+      0.1
+    ],
+    [
+      4.4,
+      3.6,
+      0.0
+    ],
+    [
+      3.9,
+      2.8,
+      1.3
+    ]
+  ],
+  "y": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.2914616386058394,
+    0.07911733476314244,
+    0.0,
+    0.06958884652757463,
+    0.03848103097334062,
+    0.07163614765239472,
+    0.06547444474670676
+  ],
+  "vials_used": {
+    "2": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ],
+    "5": [
+      "A1",
+      "A2"
+    ]
+  },
+  "pending_batch": null,
+  "history": [
+    {
+      "iteration": 1,
+      "phase": 0,
+      "phase_name": "seed_5vials_15min",
+      "experiment_name": "P0-seed_5vials_15min-01",
+      "batch_dir": "C:\\Users\\amg-admin\\Desktop\\Axo\\Axo_MOF\\spectrum_data\\2026-11-04\\Zuyang\\P0-seed_5vials_15min-01_Zuyang_20261104_115616",
+      "slot": 2,
+      "wells": "A1 A2 A3 A4 A5",
+      "n_vials": 5,
+      "interval_min": 15,
+      "n_records": 5,
+      "ei_max": NaN,
+      "max_alpha_t1": 0.7281483072882043,
+      "alpha_threshold": 0.5,
+      "first_followup_min": "A1=15.0 A2=15.0 A3=15.0 A4=15.0 A5=15.0",
+      "next_phase": 2,
+      "next_phase_name": "bo_2vials_5min",
+      "next_batch_size": 2,
+      "next_interval_min": 5,
+      "k_n_batch": "A1=0(no_reaction) A2=0(no_reaction) A3=0(no_reaction) A4=0(no_reaction) A5=0.2915(fitted)",
+      "best_k_n_so_far": 0.2914616386058394,
+      "best_composition_mL": "4.3 / 3.7 / 0.0",
+      "reagents_left_ml": "metal=23.5 organic=30.7 solvent=25.8",
+      "warnings": ""
+    },
+    {
+      "iteration": 2,
+      "phase": 2,
+      "phase_name": "bo_2vials_5min",
+      "experiment_name": "P2-bo_2vials_5min-01",
+      "batch_dir": "C:\\Users\\amg-admin\\Desktop\\Axo\\Axo_MOF\\spectrum_data\\2026-11-04\\Zuyang\\P2-bo_2vials_5min-01_Zuyang_20261104_132017",
+      "slot": 2,
+      "wells": "B1 B2",
+      "n_vials": 2,
+      "interval_min": 5,
+      "n_records": 13,
+      "ei_max": 0.008658508879431885,
+      "max_alpha_t1": 0.03527446378304252,
+      "alpha_threshold": 0.5,
+      "first_followup_min": "B1=5.0 B2=5.0",
+      "next_phase": 2,
+      "next_phase_name": "bo_2vials_5min",
+      "next_batch_size": 2,
+      "next_interval_min": 5,
+      "k_n_batch": "B1=0.07912(fitted) B2=0(no_reaction)",
+      "best_k_n_so_far": 0.2914616386058394,
+      "best_composition_mL": "4.3 / 3.7 / 0.0",
+      "reagents_left_ml": "metal=16.1 organic=23.8 solvent=24.1",
+      "warnings": ""
+    },
+    {
+      "iteration": 3,
+      "phase": 2,
+      "phase_name": "bo_2vials_5min",
+      "experiment_name": "P2-bo_2vials_5min-02",
+      "batch_dir": "C:\\Users\\amg-admin\\Desktop\\Axo\\Axo_MOF\\spectrum_data\\2026-11-04\\Zuyang\\P2-bo_2vials_5min-02_Zuyang_20261104_145654",
+      "slot": 2,
+      "wells": "B3 B4",
+      "n_vials": 2,
+      "interval_min": 5,
+      "n_records": 13,
+      "ei_max": 0.009649191806892799,
+      "max_alpha_t1": 0.03382345490660256,
+      "alpha_threshold": 0.5,
+      "first_followup_min": "B3=5.0 B4=5.0",
+      "next_phase": 2,
+      "next_phase_name": "bo_2vials_5min",
+      "next_batch_size": 2,
+      "next_interval_min": 5,
+      "k_n_batch": "B3=0.06959(fitted) B4=0.03848(fitted)",
+      "best_k_n_so_far": 0.2914616386058394,
+      "best_composition_mL": "4.3 / 3.7 / 0.0",
+      "reagents_left_ml": "metal=52.8 organic=51.3 solvent=59.9",
+      "warnings": ""
+    },
+    {
+      "iteration": 4,
+      "phase": 2,
+      "phase_name": "bo_2vials_5min",
+      "experiment_name": "P2-bo_2vials_5min-03",
+      "batch_dir": "C:\\Users\\amg-admin\\Desktop\\Axo\\Axo_MOF\\spectrum_data\\2026-11-04\\Zuyang\\P2-bo_2vials_5min-03_Zuyang_20261104_160858",
+      "slot": 5,
+      "wells": "A1 A2",
+      "n_vials": 2,
+      "interval_min": 5,
+      "n_records": 13,
+      "ei_max": 0.04277471417801621,
+      "max_alpha_t1": 0.07185659626683386,
+      "alpha_threshold": 0.5,
+      "first_followup_min": "A1=5.4 A2=4.9",
+      "next_phase": 2,
+      "next_phase_name": "bo_2vials_5min",
+      "next_batch_size": 2,
+      "next_interval_min": 5,
+      "k_n_batch": "A1=0.07164(fitted) A2=0.06547(fitted)",
+      "best_k_n_so_far": 0.2914616386058394,
+      "best_composition_mL": "4.3 / 3.7 / 0.0",
+      "reagents_left_ml": "metal=44.5 organic=44.9 solvent=58.6",
+      "warnings": ""
+    }
+  ],
+  "status": "completed",
+  "reagents_remaining_ml": {
+    "metal": 44.5,
+    "organic": 44.9,
+    "solvent": 58.6
+  },
+  "settings": {
+    "alpha_threshold": 0.5,
+    "max_bo_batches": 10,
+    "max_validation_batches": 4,
+    "max_total_vials": null,
+    "max_total_batches": 4,
+    "seed": 42,
+    "xi": 0.01,
+    "radius_uc": 0.2,
+    "reagent_margin_ml": 12.0,
+    "feature_gate_nm": null,
+    "signal_gate": 0.12,
+    "reagent_names": {
+      "metal": "Zn+2",
+      "organic": "2-methylimidazole",
+      "solvent": "triethylamine/methanol"
+    },
+    "initial_conditions": null,
+    "phases": {
+      "0": {
+        "name": "seed_5vials_15min",
+        "batch_size": 5,
+        "interval_min": 15,
+        "n_records": 5,
+        "seeded": true,
+        "next_if_fast": 2,
+        "next_if_slow": 1,
+        "lids_between_readings": true
+      },
+      "1": {
+        "name": "bo_5vials_15min",
+        "batch_size": 5,
+        "interval_min": 15,
+        "n_records": 5,
+        "seeded": false,
+        "next_if_fast": 2,
+        "next_if_slow": 1,
+        "lids_between_readings": true
+      },
+      "2": {
+        "name": "bo_2vials_5min",
+        "batch_size": 2,
+        "interval_min": 5,
+        "n_records": 13,
+        "seeded": false,
+        "next_if_fast": 3,
+        "next_if_slow": 2,
+        "lids_between_readings": true
+      },
+      "3": {
+        "name": "bo_1vial_2min",
+        "batch_size": 1,
+        "interval_min": 2,
+        "n_records": 13,
+        "seeded": false,
+        "next_if_fast": 3,
+        "next_if_slow": 3,
+        "lids_between_readings": false
+      }
+    }
+  },
+  "saved_at": "2026-11-04T17:21:29.752589"
+}

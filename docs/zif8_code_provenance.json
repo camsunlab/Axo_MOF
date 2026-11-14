@@ -1,0 +1,56 @@
+{
+  "development_base_commit": "670bfb9a197e57f6bdc5dfb48caa50cc74ecdbd1",
+  "main_checked_commit": "ad12c0f3128cd682d23432d7000e0399b6591ee9",
+  "source_archive": "Code.zip supplied from the experiment computer",
+  "original_notebook_sha256": "e9af4e8469c4581147299da7db50ca43acc7ae60169d154b9ff1bdce01220965",
+  "controller_and_calibration_files": [
+    {
+      "file": "Code/src/science_jubilee/Experiment.py",
+      "sha256": "6f2fadf662bcc3f08b96fd45b0cc2acf77de5bb9bcd7c758956286b40d8c381d",
+      "copied_without_content_changes": true
+    },
+    {
+      "file": "Code/src/science_jubilee/offline_demo.py",
+      "sha256": "e3162a01267513570694a9d3af30578c8ec0398e3dbe724f527638c3ceb45748",
+      "copied_without_content_changes": true
+    },
+    {
+      "file": "Code/src/science_jubilee/optimization/reaction_aware.py",
+      "sha256": "245d58fa3af814a72c6acc22f0493f989a3db5ca2b3a382ef52cbb3af7c86199",
+      "copied_without_content_changes": true
+    },
+    {
+      "file": "Code/src/science_jubilee/analysis/gualtieri.py",
+      "sha256": "f96e9a374b7d1e479170a37d34f2a6af615033ecca7b07b3e5eacf318eb58e69",
+      "copied_without_content_changes": true
+    },
+    {
+      "file": "Code/src/science_jubilee/labware/labware_definition/uwsunlab_10_wellplate_14000ul_spec_1.json",
+      "sha256": "ed0c28a575a0834108e24e00cd12ae02c48aa08b4852929a6c1a2ae37e41fbc0",
+      "copied_without_content_changes": true
+    },
+    {
+      "file": "Code/src/science_jubilee/labware/labware_definition/uwsunlab_10_wellplate_14000ul_spec_2.json",
+      "sha256": "5dfcc2f644772edbd36d381dd48a80367445e1879d41232c8101395d6a363e55",
+      "copied_without_content_changes": true
+    },
+    {
+      "file": "Code/src/science_jubilee/labware/labware_definition/uwsunlab_10_wellplate_14000ul_ssy_1.json",
+      "sha256": "b55301ca1f8860e6fdc844293276cad587c08bbbe23df537959fb6b6798ac902",
+      "copied_without_content_changes": true
+    },
+    {
+      "file": "Code/src/science_jubilee/labware/labware_definition/uwsunlab_10_wellplate_14000ul_ssy_2.json",
+      "sha256": "7d390471907cc73a99babce243d5766492db999549eff9ec6632cff45ad93fdb",
+      "copied_without_content_changes": true
+    }
+  ],
+  "public_notebook_changes": [
+    "Resolve Code/src relative to the repository root or Code working directory.",
+    "Use relative output paths and pass SPECTRUM_BASE_DIR to Spectrometer.",
+    "Use OPERATOR_NAME consistently.",
+    "Disable the example refill-accounting action unless explicitly configured.",
+    "Clear cell execution output and add the publication-copy notice."
+  ],
+  "raw_data_status_at_preparation": "Not included in supplied Code.zip; separate unchanged upload required."
+}

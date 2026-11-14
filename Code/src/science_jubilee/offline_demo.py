@@ -62,14 +62,24 @@ def verify_input_files(data_dir: Path) -> dict:
     return {"manifest_present": True, **manifest}
 
 
-def _analyse_vial(csv_path: Path, log_path: Path, recipe: dict) -> tuple[dict, dict, list[str]]:
+def _analyse_vial(csv_path: Path, log_path: Path, recipe: dict, feature_nm: float | None = 590.0,
+                  signal_gate: float = 0.12) -> tuple[dict, dict, list[str]]:
+    """Gates + Gualtieri fit at 400 nm for one vial.
+
+    Gate 1 (no_reaction): the 400-nm absorbance never reaches signal_gate or rises by less than it.
+    Gate 2 (no_target_feature): the absorbance at feature_nm (590 nm, Co(II) band of ZIF-67) rises by less
+    than signal_gate. feature_nm=None switches gate 2 off (e.g. ZIF-8, which has no visible band).
+    """
     wavelengths, spectra = read_uvvis(str(csv_path))
     nominal, signal, wl400 = extract_series_at_wavelength(wavelengths, spectra, 400.0)
-    _, feature, wl590 = extract_series_at_wavelength(wavelengths, spectra, 590.0)
+    if feature_nm is not None:
+        _, feature, wl_feature = extract_series_at_wavelength(wavelengths, spectra, feature_nm)
+    else:
+        feature, wl_feature = None, None
     if len(nominal) < 4 or nominal[0] != 0:
         raise ValueError(f"{csv_path.name}: a baseline and at least four time points are required.")
-    if abs(wl400 - 400.0) > 2 or abs(wl590 - 590.0) > 2:
-        raise ValueError(f"{csv_path.name}: the expected 400/590-nm channels are unavailable.")
+    if abs(wl400 - 400.0) > 2 or (feature_nm is not None and abs(wl_feature - feature_nm) > 2):
+        raise ValueError(f"{csv_path.name}: the expected 400/{feature_nm}-nm channels are unavailable.")
     vial = csv_path.stem
     meta = parse_uvvis_metadata(str(csv_path))
     if meta.get("well_id", vial).strip() != vial:
@@ -78,9 +88,9 @@ def _analyse_vial(csv_path: Path, log_path: Path, recipe: dict) -> tuple[dict, d
     notes = recipe.get("notes", "").strip().lower()
     slot = int(notes.removeprefix("slot")) if notes.startswith("slot") else None
     mapping = parse_times_from_operations_log(str(log_path), vial, slot)
-    if not all(int(t) in mapping for t in nominal):
+    if not all(float(t) in mapping for t in nominal):
         raise ValueError(f"{vial}: every CSV time point must have a matching operation-log event.")
-    elapsed = np.array([mapping[int(t)] for t in nominal], dtype=float)
+    elapsed = np.array([mapping[float(t)] for t in nominal], dtype=float)
     if elapsed[0] != 0 or np.any(np.diff(elapsed) <= 0):
         raise ValueError(f"{vial}: recorded times must increase from the baseline event.")
     volume = [float(recipe[key]["volume_ml"]) for key in
@@ -89,15 +99,15 @@ def _analyse_vial(csv_path: Path, log_path: Path, recipe: dict) -> tuple[dict, d
         raise ValueError(f"{vial}: the demonstration expects an 8-mL ternary formulation.")
     corrected = signal - np.min(signal)  # Matches the deposited fit_gualtieri.
     amplitude = float(np.ptp(signal))
-    feature_amplitude = float(np.ptp(feature))
+    feature_amplitude = None if feature is None else float(np.ptp(feature))
     status = "fitted"
-    if float(np.max(signal)) < 0.12 or amplitude < 0.12:
+    if float(np.max(signal)) < signal_gate or amplitude < signal_gate:
         status = "no_reaction"
-    elif feature_amplitude < 0.12:
+    elif feature_amplitude is not None and feature_amplitude < signal_gate:
         status = "no_target_feature"
     row = dict(vial_id=vial, Co_mL=volume[0], mIm_mL=volume[1], TEA_mL=volume[2],
                status=status, n_time_points=len(elapsed), wavelength_nm=wl400,
-               feature_wavelength_nm=wl590, signal_range=amplitude,
+               feature_wavelength_nm=wl_feature, signal_range=amplitude,
                feature_range=feature_amplitude, first_followup_min=float(elapsed[1]),
                k_g_min_inverse=None, a_min=None, b_min=None, I_max=None, R2=None,
                k_n_min_inverse=None, optimization_score=0.0,

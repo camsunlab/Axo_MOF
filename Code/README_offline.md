@@ -12,9 +12,8 @@ Use a separate Python 3.12 environment. The reference interpreter is Python
 `docs/offline_validation.md`. `requirements-offline.txt` pins direct and
 transitive dependencies; platform-specific dependencies use environment markers.
 
-Run from the **repository root** of an upstream checkout at commit
-`01278f84fd592dd0afdffaeec1bd71f6105af90e`, after copying the supplementary files
-over it (see "Reproducible offline analysis" in the top-level `README.md`):
+Run from the **repository root** of this checkout, with Python 3.12 selected.
+The files are part of the repository; no older checkout or supplementary overlay is needed:
 
 ```bash
 python -m venv .venv
@@ -142,7 +141,8 @@ The original generic hardware orchestration code remains available. Its
 `batch_extract_yields` interface returns `I_max`, and its default phase
 configuration is a separate generic multistage example. The offline example
 does not use those defaults as the manuscript's kinetic objective or two-mode
-policy, and does not alter the existing hardware controller.
+policy. The integrated ZIF-8 hardware entry point is `autonomous_mof_synthesis.ipynb`;
+see `README_autonomous_run.md` for its chemistry configuration and operating requirements.
 
 Running physical experiments additionally requires the compatible Jubilee/Duet
 platform, syringe tools, spectrometer, OceanDirect SDK and OS-specific vendor
@@ -220,10 +220,10 @@ and behaves as designed on a problem with a known answer. They are not evidence
 about ZIF-67 kinetics, about optimization performance on the physical system, or
 about the historical campaign. See `docs/simulation_validation.md`.
 
-Two upstream defects are worked around in the simulated experiment, not fixed in
-the hardware code: `Experiment` never sets the `experiment_dir` attribute that the
-orchestrator reads after each batch, and the spectrometer writes every batch into
-one folder. Both are described in `docs/simulation_validation.md`.
+The historical simulation report describes limitations of the older generic
+hardware loop. The updated `ReactionAwareBOLoop` sets a separate data folder
+for every batch and supplies `experiment.experiment_dir`. See the current
+`../docs/revision_code_availability.md` for the scope of the integrated notebook.
 
 ## Validation
 
@@ -255,3 +255,18 @@ and fitter recover the true parameters within 1 %, that low-Co and low-2-mIm via
 fail the expected optical gates, that the upstream loop runs and resumes from
 `bo_state.json`, that the two-mode loop switches mode and proposes only untested
 lattice points, and that two runs with the same seed write byte-identical files.
+
+## Integrated notebook and recorded ZIF-8 data
+
+The standalone example above retains its ZIF-67 optical gates. The integrated
+ZIF-8 notebook instead passes `feature_gate_nm=None` to the same analysis helper.
+The default offline command is therefore not a ZIF-8 replay command.
+
+```bash
+python Code/tests/notebook_dry_run.py Code/autonomous_mof_synthesis.ipynb notebook_dry_run_outputs --truth fast --in-process
+python Code/prepare_zif8_upload.py --check-root .
+```
+
+The first command uses synthetic device responses; the second checks deposited
+recorded-file completeness and checksums. Neither command reproduces all paper
+figures. The original ZIF-8 execution records are under `Dataset/ZIF8_20261104/`.

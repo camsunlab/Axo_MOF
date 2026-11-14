@@ -1,3 +1,7 @@
+> Historical report: the source revision and validation scope below are retained.
+> This is not a current audit of the integrated ZIF-8 notebook. See
+> [revision_code_availability.md](revision_code_availability.md) for the present changes and remaining limits.
+
 # Simulation-mode validation report
 
 Validation recorded: 2026-10-25, Linux 6.8.0 (x86_64), Python 3.12.14, pinned

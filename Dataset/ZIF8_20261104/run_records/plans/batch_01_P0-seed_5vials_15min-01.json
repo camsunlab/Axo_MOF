@@ -1,0 +1,42 @@
+{
+    "slot2": {
+        "A1": {
+            "metal_precursor_vol": 0.4,
+            "organic_precursor_vol": 4.9,
+            "solvent_vol": 2.7
+        },
+        "A2": {
+            "metal_precursor_vol": 7.9,
+            "organic_precursor_vol": 0.1,
+            "solvent_vol": 0
+        },
+        "A3": {
+            "metal_precursor_vol": 0.1,
+            "organic_precursor_vol": 0.1,
+            "solvent_vol": 7.8
+        },
+        "A4": {
+            "metal_precursor_vol": 3.8,
+            "organic_precursor_vol": 0.5,
+            "solvent_vol": 3.7
+        },
+        "A5": {
+            "metal_precursor_vol": 4.3,
+            "organic_precursor_vol": 3.7,
+            "solvent_vol": 0
+        }
+    },
+    "spectrum_record_interval_mins": 15,
+    "max_spectrum_records": 5,
+    "Experiment": {
+        "operator_name": "Zuyang",
+        "experiment_name": "P0-seed_5vials_15min-01",
+        "experiment_date": "04 November 2026",
+        "experiment_time": "11:56",
+        "experiment_description": "Reaction-aware BO, phase 0 (seed_5vials_15min), 5 vials",
+        "approximate_time": "1.0 hours of readings",
+        "metal_precursor_name": "Zn+2",
+        "organic_precursor_name": "2-methylimidazole",
+        "solvent_name": "triethylamine/methanol"
+    }
+}

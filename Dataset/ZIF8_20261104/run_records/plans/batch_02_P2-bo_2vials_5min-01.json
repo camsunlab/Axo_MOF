@@ -1,0 +1,27 @@
+{
+    "slot2": {
+        "B1": {
+            "metal_precursor_vol": 4.6,
+            "organic_precursor_vol": 3.4,
+            "solvent_vol": 0
+        },
+        "B2": {
+            "metal_precursor_vol": 2.8,
+            "organic_precursor_vol": 3.5,
+            "solvent_vol": 1.7
+        }
+    },
+    "spectrum_record_interval_mins": 5,
+    "max_spectrum_records": 13,
+    "Experiment": {
+        "operator_name": "Zuyang",
+        "experiment_name": "P2-bo_2vials_5min-01",
+        "experiment_date": "04 November 2026",
+        "experiment_time": "13:20",
+        "experiment_description": "Reaction-aware BO, phase 2 (bo_2vials_5min), 2 vials",
+        "approximate_time": "1.0 hours of readings",
+        "metal_precursor_name": "Zn+2",
+        "organic_precursor_name": "2-methylimidazole",
+        "solvent_name": "triethylamine/methanol"
+    }
+}

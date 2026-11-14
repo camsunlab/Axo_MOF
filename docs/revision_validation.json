@@ -1,0 +1,40 @@
+{
+  "validation_date": "2026-11-14",
+  "scope": "Local working-tree combination of main, development branch and the prepared upload files; no GitHub publication performed.",
+  "python": "3.12.14",
+  "test_environment": "Separate Python 3.12.14 virtual environment installed from Code/requirements-offline.txt",
+  "dependency_pins_matching": 109,
+  "tests": {
+    "pip_check": "passed",
+    "recorded_data_with_network_and_hardware_imports_blocked": "passed",
+    "recorded_reference_results": "passed",
+    "synthetic_simulation_checks": "passed",
+    "reaction_aware_controller_skip_historical_replay": "passed",
+    "integrated_notebook_ipython_in_process": "passed",
+    "data_staging_utility_synthetic_file_copy_fixtures": "passed"
+  },
+  "notebook_simulation": {
+    "rounds": 4,
+    "vials_per_round": [
+      5,
+      2,
+      2,
+      2
+    ],
+    "intervals_min": [
+      15,
+      5,
+      5,
+      5
+    ],
+    "status": "completed"
+  },
+  "limitations": [
+    "Separate Jupyter kernel startup was blocked by this host socket restrictions; in-process IPython execution passed.",
+    "No new physical hardware run was performed.",
+    "Original ZIF-8 spectra were not supplied; the raw-data completeness job must pass after author upload.",
+    "Synthetic fixture validation concerns byte copying and missing/tampered file detection, not experimental measurements.",
+    "Historical campaign replay with its two numeric overrides was not used as proof of direct raw-data reproduction.",
+    "The final remote GitHub commit and its Actions jobs still require validation after upload and conflict resolution."
+  ]
+}

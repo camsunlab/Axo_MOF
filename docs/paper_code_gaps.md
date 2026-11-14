@@ -1,3 +1,7 @@
+> Historical report: the source revision and validation scope below are retained.
+> This is not a current audit of the integrated ZIF-8 notebook. See
+> [revision_code_availability.md](revision_code_availability.md) for the present changes and remaining limits.
+
 # Manuscript vs. repository: gap review
 
 Manuscript: *Reaction-aware control of autonomous batch synthesis* (Ye, Ryu, *et al.*), submitted version of 2026-05-20 (18 pp.).
