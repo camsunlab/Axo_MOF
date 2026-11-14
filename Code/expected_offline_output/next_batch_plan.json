@@ -1,0 +1,29 @@
+{
+  "threshold": 0.5,
+  "max_alpha_first_followup": 0.6482889976184503,
+  "switch_to_measurement_prioritized": true,
+  "next_mode": "measurement-prioritized",
+  "next_batch_size": 2,
+  "next_measurement_interval_min": 5,
+  "executed": false,
+  "proposals": [
+    {
+      "proposal_rank": 1,
+      "Co_mL": 5.0,
+      "mIm_mL": 0.1,
+      "TEA_mL": 2.9,
+      "predicted_score": 0.10429648428598923,
+      "predictive_std": 0.02932057280393719,
+      "expected_improvement": 0.003395133774999384
+    },
+    {
+      "proposal_rank": 2,
+      "Co_mL": 3.8,
+      "mIm_mL": 1.2,
+      "TEA_mL": 3.0,
+      "predicted_score": 0.11043704870119028,
+      "predictive_std": 0.02358380102145374,
+      "expected_improvement": 0.0030376482351911318
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/camsunlab/Axo_MOF",
+  "commit": "01278f84fd592dd0afdffaeec1bd71f6105af90e",
+  "source_batch": "Dataset/BO_4_Zuyang_20251117_190856",
+  "description": "Unmodified recorded UV-Vis CSVs, recipes, metadata and operation log; no new or simulated measurements.",
+  "files": [
+    {
+      "file": "experiment_metadata.json",
+      "source_path": "Dataset/BO_4_Zuyang_20251117_190856/experiment_metadata.json",
+      "sha256": "292e94f288e0fda919a3d0d19a89db2e4b9aa824b073f19b92c3131efc2699e9",
+      "bytes": 361
+    },
+    {
+      "file": "mof_recipes.json",
+      "source_path": "Dataset/BO_4_Zuyang_20251117_190856/mof_recipes.json",
+      "sha256": "43b4e4d622a7aa9d04e1e9172af978de93870a516f2503f2146a5c7070211189",
+      "bytes": 1600
+    },
+    {
+      "file": "operations_log.txt",
+      "source_path": "Dataset/BO_4_Zuyang_20251117_190856/operations_log.txt",
+      "sha256": "467d66f2f5b76cbf6f738878e426c13a3fe60e8dea9886af82dad014ff2e8736",
+      "bytes": 35569
+    },
+    {
+      "file": "spectra/B1.csv",
+      "source_path": "Dataset/BO_4_Zuyang_20251117_190856/spectra/B1.csv",
+      "sha256": "e6d459769cc9e85fd7bf2b35250575d9c4bc6b67e1f6c59624a1f0005668cf74",
+      "bytes": 1444396
+    },
+    {
+      "file": "spectra/B2.csv",
+      "source_path": "Dataset/BO_4_Zuyang_20251117_190856/spectra/B2.csv",
+      "sha256": "96fc7aa4f13274c4f50fcf0575861d896b0699e5e7419051f3f0c8aa02800b5d",
+      "bytes": 1531774
+    },
+    {
+      "file": "spectra/B3.csv",
+      "source_path": "Dataset/BO_4_Zuyang_20251117_190856/spectra/B3.csv",
+      "sha256": "5eb6d989dc1650c86f816584dc785ebc5fa0bd9553d57e6f1ed87377adcaac2b",
+      "bytes": 1478385
+    },
+    {
+      "file": "spectra/B4.csv",
+      "source_path": "Dataset/BO_4_Zuyang_20251117_190856/spectra/B4.csv",
+      "sha256": "4a583f1d3e3c7461e31b0db761321112c37ecf1017b2e20eefff0b917af3229e",
+      "bytes": 1541890
+    },
+    {
+      "file": "spectra/B5.csv",
+      "source_path": "Dataset/BO_4_Zuyang_20251117_190856/spectra/B5.csv",
+      "sha256": "7cac9506aae6d761c0e28356e871fadf84f818a1ba00fa98e2f1f6d6901691c6",
+      "bytes": 1488956
+    }
+  ]
+}

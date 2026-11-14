@@ -1,0 +1,13 @@
+[2026-11-04 11:55:53] INFO     | BayesianOptimization | Logger initialized. Log file: C:\Users\amg-admin\Desktop\Axo\Axo_MOF\Code\optimization_results\staged_60min_run1\bo_optimization.log
+[2026-11-04 11:56:16] INFO     | BayesianOptimization | Batch 1 (P0-seed_5vials_15min-01): 5 vials in slot 2 ['A1', 'A2', 'A3', 'A4', 'A5'], 15-min interval x 5 readings (0-60 min).
+[2026-11-04 13:20:12] INFO     | BayesianOptimization | Batch 1: k_n [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2915)], max alpha(t1) 0.728; best k_n so far 0.2915.
+[2026-11-04 13:20:12] INFO     | BayesianOptimization | Phase 0 (seed_5vials_15min) -> phase 2 (bo_2vials_5min); max alpha(t1) = 0.728 (threshold 0.5). Next: 2 vials per batch at 5-min intervals x 13 readings.
+[2026-11-04 13:20:17] INFO     | BayesianOptimization | Batch 2 (P2-bo_2vials_5min-01): 2 vials in slot 2 ['B1', 'B2'], 5-min interval x 13 readings (0-60 min).
+[2026-11-04 14:32:52] INFO     | BayesianOptimization | Batch 2: k_n [np.float64(0.0791), np.float64(0.0)], max alpha(t1) 0.035; best k_n so far 0.2915.
+[2026-11-04 14:32:53] WARNING  | BayesianOptimization | Refill before the next batch: metal: batch needs 7.2 mL + 12 mL margin, 16.1 mL left. Then call refill_reagents(metal=..., organic=..., solvent=...) with the volumes now in the reservoirs and run again.
+[2026-11-04 14:56:10] INFO     | BayesianOptimization | Reagents refilled; now (mL): {'metal': 60.0, 'organic': 60.0, 'solvent': 60.0}.
+[2026-11-04 14:56:54] INFO     | BayesianOptimization | Batch 3 (P2-bo_2vials_5min-02): 2 vials in slot 2 ['B3', 'B4'], 5-min interval x 13 readings (0-60 min).
+[2026-11-04 16:08:58] INFO     | BayesianOptimization | Batch 3: k_n [np.float64(0.0696), np.float64(0.0385)], max alpha(t1) 0.034; best k_n so far 0.2915.
+[2026-11-04 16:08:58] INFO     | BayesianOptimization | Batch 4 (P2-bo_2vials_5min-03): 2 vials in slot 5 ['A1', 'A2'], 5-min interval x 13 readings (0-60 min).
+[2026-11-04 17:21:29] INFO     | BayesianOptimization | Batch 4: k_n [np.float64(0.0716), np.float64(0.0655)], max alpha(t1) 0.072; best k_n so far 0.2915.
+[2026-11-04 17:21:29] INFO     | BayesianOptimization | Campaign complete: 4 batches completed.

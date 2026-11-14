@@ -1,0 +1,162 @@
+{
+  "scope": "Unchanged inputs for the four recorded ZIF-8 rounds; not fit validation.",
+  "rounds": 4,
+  "vials": 11,
+  "files": [
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/mof_recipes.json",
+      "sha256": "7b95f1a55d4e13e1ddf8b3b32dbd352739baadd1e67b144b2e109bcf94f1b33d",
+      "size_bytes": 1679
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/experiment_metadata.json",
+      "sha256": "328f05e26978d0a272e2853b252d66d7563b3de1e30648104bc7855ebadb064c",
+      "size_bytes": 446
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/operations_log.txt",
+      "sha256": "3540b4e212c1814e77ea80f0a0c4bb3a7cc41a2810005763ca9f3eb500792121",
+      "size_bytes": 12728
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/spectra/A1.csv",
+      "sha256": "3d8f72180344d44c572fa4e24979d85e0c9bdd4987957e872c31fefc9b651f47",
+      "size_bytes": 604477
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/spectra/A2.csv",
+      "sha256": "67321419e913ed3e8b9824e9f646a6affa60b7f890a7f58cf02573e44eb5b80a",
+      "size_bytes": 621664
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/spectra/A3.csv",
+      "sha256": "d3ca9a3581383a7131a66565324fb75c378c95090f8b1020e78d3ae6a2ddf560",
+      "size_bytes": 614989
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/spectra/A4.csv",
+      "sha256": "fd27248ccf1662a3bf489c67ce9f5ae0b67e534ba73e0a395430b16578aec09b",
+      "size_bytes": 621100
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/spectra/A5.csv",
+      "sha256": "3f8356ee756831cb1544c051f6c435593d43acacb65bea8f723d5325bdd6e536",
+      "size_bytes": 599927
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/references/dark_20261104_115650.npy",
+      "sha256": "41a983cdcbd6199eeec59ec810b77d9430ed3c4cbfc927e5d44380aa169a2595",
+      "size_bytes": 33216
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P0-seed_5vials_15min-01_Zuyang_20261104_115616/references/white_20261104_115714.npy",
+      "sha256": "bf77b4e12d5d81fe1a3599d35d2a301121904feb5df689fcfa115a9c47473548",
+      "size_bytes": 33216
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-01_Zuyang_20261104_132017/mof_recipes.json",
+      "sha256": "00fe2faf3d52e73ffe84cec51a6e99b66b5b285361a9329a981d483391ae2099",
+      "size_bytes": 673
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-01_Zuyang_20261104_132017/experiment_metadata.json",
+      "sha256": "21a3e43b02c444caa090c2a9e8c0db5f922c2f59d2bf8534dfda139b615f9330",
+      "size_bytes": 437
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-01_Zuyang_20261104_132017/operations_log.txt",
+      "sha256": "ff12c43afa02f91a95a345d9e8f5f21252c5281c1da10df0b116373364caac76",
+      "size_bytes": 8894
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-01_Zuyang_20261104_132017/spectra/B1.csv",
+      "sha256": "7f8f32971f8d7137d161dc3512138a2fc4e9a40a4d92363f18eda94b8723be48",
+      "size_bytes": 1520507
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-01_Zuyang_20261104_132017/spectra/B2.csv",
+      "sha256": "9b4e75e680dc1c404c3e94065ca858943319267e6358f107e51389c5794cade6",
+      "size_bytes": 1616925
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-01_Zuyang_20261104_132017/references/dark_20261104_115650.npy",
+      "sha256": "41a983cdcbd6199eeec59ec810b77d9430ed3c4cbfc927e5d44380aa169a2595",
+      "size_bytes": 33216
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-01_Zuyang_20261104_132017/references/white_20261104_115714.npy",
+      "sha256": "bf77b4e12d5d81fe1a3599d35d2a301121904feb5df689fcfa115a9c47473548",
+      "size_bytes": 33216
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-02_Zuyang_20261104_145654/mof_recipes.json",
+      "sha256": "bd1e542ba3d67d8115a2baa76f0124d475f860edaea87ddfede3de5c12ea1798",
+      "size_bytes": 671
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-02_Zuyang_20261104_145654/experiment_metadata.json",
+      "sha256": "191db575d517313105dc06c80ba260a53b978c179ca0f763a4302a59aabae3ba",
+      "size_bytes": 437
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-02_Zuyang_20261104_145654/operations_log.txt",
+      "sha256": "ca47328137588c6e8f2eba7314e8b23e9203ac6c42dc4cef4efc05bd5a2d0973",
+      "size_bytes": 8890
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-02_Zuyang_20261104_145654/spectra/B3.csv",
+      "sha256": "91fbde517007e0cce88e91e9fdd747b4aef950422c39ccb67d0eabc913bcb1e3",
+      "size_bytes": 1541343
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-02_Zuyang_20261104_145654/spectra/B4.csv",
+      "sha256": "6c2ff5dd641b98b4e5b08179112e383479c89c5574f1666f19bed40b0b6534a7",
+      "size_bytes": 1604723
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-02_Zuyang_20261104_145654/references/dark_20261104_115650.npy",
+      "sha256": "41a983cdcbd6199eeec59ec810b77d9430ed3c4cbfc927e5d44380aa169a2595",
+      "size_bytes": 33216
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-02_Zuyang_20261104_145654/references/white_20261104_115714.npy",
+      "sha256": "bf77b4e12d5d81fe1a3599d35d2a301121904feb5df689fcfa115a9c47473548",
+      "size_bytes": 33216
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-03_Zuyang_20261104_160858/mof_recipes.json",
+      "sha256": "4e97cf28da4b59121724ec931be6d81cf43454c114e1e1239b9eb5de46552de8",
+      "size_bytes": 687
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-03_Zuyang_20261104_160858/experiment_metadata.json",
+      "sha256": "84c369babfc24556d24569f57f2a32f771ef9434e72c61526e04a96cdac118b9",
+      "size_bytes": 437
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-03_Zuyang_20261104_160858/operations_log.txt",
+      "sha256": "ae3f1a01c86a30e9adc299665003e492272a4c4cee6bf07634a0c79677062246",
+      "size_bytes": 8891
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-03_Zuyang_20261104_160858/spectra/A1.csv",
+      "sha256": "4864b026655cc683e37b52f73a31541e93dd139847579d5f555bb8be6663c22c",
+      "size_bytes": 1516035
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-03_Zuyang_20261104_160858/spectra/A2.csv",
+      "sha256": "e686bcc1aecaf370770e7e7b65f3e7ac623c88665412622634ffdfb313c487f1",
+      "size_bytes": 1530617
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-03_Zuyang_20261104_160858/references/dark_20261104_115650.npy",
+      "sha256": "41a983cdcbd6199eeec59ec810b77d9430ed3c4cbfc927e5d44380aa169a2595",
+      "size_bytes": 33216
+    },
+    {
+      "path": "Dataset/ZIF8_20261104/raw/P2-bo_2vials_5min-03_Zuyang_20261104_160858/references/white_20261104_115714.npy",
+      "sha256": "bf77b4e12d5d81fe1a3599d35d2a301121904feb5df689fcfa115a9c47473548",
+      "size_bytes": 33216
+    }
+  ]
+}

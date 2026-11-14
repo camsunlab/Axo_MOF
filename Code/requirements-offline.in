@@ -1,0 +1,15 @@
+# Direct dependencies for the tested Python 3.12 offline workflow.
+# requirements-offline.txt additionally pins the transitive dependencies.
+numpy==2.3.5
+scipy==1.17.0
+pandas==2.2.3
+scikit-learn==1.8.0
+matplotlib==3.10.8
+python-ternary==1.0.8
+jupyterlab==4.6.4
+ipykernel==7.4.0
+nbclient==0.11.0
+nbformat==5.11.1
+pip==26.2.2
+setuptools==84.1.0
+wheel==0.48.0

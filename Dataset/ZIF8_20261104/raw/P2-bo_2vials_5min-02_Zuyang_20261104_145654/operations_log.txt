@@ -1,0 +1,155 @@
+[2026-11-04 14:57:05] Picked Up Vacuum Gripper
+[2026-11-04 14:57:29] Picked Lid from Slot 1 and Placed Lid in Slot 4
+[2026-11-04 14:57:37] Parked Vacuum Gripper
+[2026-11-04 14:57:48] Picked Up Vacuum Gripper
+[2026-11-04 14:58:09] Picked Lid from Slot 3 and Placed Lid in Slot 4
+[2026-11-04 14:58:17] Parked Vacuum Gripper
+[2026-11-04 14:58:28] Picked Up Vacuum Gripper
+[2026-11-04 14:58:49] Picked Lid from Slot 2 and Placed Lid in Slot 4
+[2026-11-04 14:58:57] Parked Vacuum Gripper
+[2026-11-04 14:59:06] Picked Up Single Syringe
+[2026-11-04 14:59:15] Vial B3 on Slot 2 filled with 0 ml solvent
+[2026-11-04 14:59:15] Sleep for 3 seconds to let the drops fall off
+[2026-11-04 15:00:48] Vial B4 on Slot 2 filled with 0.1 ml solvent
+[2026-11-04 15:00:48] Sleep for 3 seconds to let the drops fall off
+[2026-11-04 15:01:20] Single Syringe reset and position: -0.0
+[2026-11-04 15:01:30] Parked Single Syringe
+[2026-11-04 15:01:41] Picked Up Dual Syringe
+[2026-11-04 15:02:29] Dual Syringe Drive 0 (metal precursor) Refilled
+[2026-11-04 15:03:14] Dual Syringe Drive 1 (organic precursor) Refilled
+[2026-11-04 15:03:14] Vial B3 on Slot 2: addition order = metal precursor -> organic precursor
+[2026-11-04 15:03:33] Sleeping for 3 seconds to let the drops fall off
+[2026-11-04 15:03:36] Vial B3 on Slot 2 filled with 4.2 ml metal precursor 
+[2026-11-04 15:03:49] Sleeping for 3 seconds to let the drops fall off
+[2026-11-04 15:03:52] Vial B3 on Slot 2 filled with 3.8 ml organic precursor 
+[2026-11-04 15:03:52] Vial B3 on Slot 2 filled with 4.2 ml metal precursor and 3.8 ml organic precursor
+[2026-11-04 15:04:02] Parked Dual Syringe
+[2026-11-04 15:04:11] Picked Up Single Syringe
+[2026-11-04 15:04:41] Vial B3 on Slot 2 mixed
+[2026-11-04 15:04:49] Parked Single Syringe
+[2026-11-04 15:04:59] Picked Up Spectrometer
+[2026-11-04 15:05:21] Spectrum recorded for vial B3 on Slot 2 at 0 mins
+[2026-11-04 15:05:43] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:05:52] Parked Spectrometer 
+[2026-11-04 15:06:02] Picked Up Dual Syringe
+[2026-11-04 15:06:03] Vial B4 on Slot 2: addition order = metal precursor -> organic precursor
+[2026-11-04 15:06:19] Sleeping for 3 seconds to let the drops fall off
+[2026-11-04 15:06:22] Vial B4 on Slot 2 filled with 3 ml metal precursor 
+[2026-11-04 15:06:34] Sleeping for 3 seconds to let the drops fall off
+[2026-11-04 15:06:37] Vial B4 on Slot 2 filled with 4.9 ml organic precursor 
+[2026-11-04 15:06:37] Vial B4 on Slot 2 filled with 3 ml metal precursor and 4.9 ml organic precursor
+[2026-11-04 15:06:47] Parked Dual Syringe
+[2026-11-04 15:06:57] Picked Up Single Syringe
+[2026-11-04 15:07:26] Vial B4 on Slot 2 mixed
+[2026-11-04 15:07:34] Parked Single Syringe
+[2026-11-04 15:07:44] Picked Up Spectrometer
+[2026-11-04 15:08:07] Spectrum recorded for vial B4 on Slot 2 at 0 mins
+[2026-11-04 15:08:28] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:08:37] Parked Spectrometer 
+[2026-11-04 15:08:48] Picked Up Dual Syringe
+[2026-11-04 15:08:49] Dual Syringe kept filled for the next round: 3.45 ml metal precursor (drive 0), 1.94 ml organic precursor (drive 1)
+[2026-11-04 15:08:56] Parked Dual Syringe
+[2026-11-04 15:09:06] Picked Up Vacuum Gripper
+[2026-11-04 15:09:15] Picked Lid from Slot 4 and Placed Lid in Slot 1
+[2026-11-04 15:09:22] Parked Vacuum Gripper
+[2026-11-04 15:09:53] Picked Up Spectrometer
+[2026-11-04 15:10:20] Spectrum recorded for vial B3 on Slot 2 at 5 mins
+[2026-11-04 15:10:41] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:10:50] Parked Spectrometer 
+[2026-11-04 15:12:41] Picked Up Spectrometer
+[2026-11-04 15:13:04] Spectrum recorded for vial B4 on Slot 2 at 5 mins
+[2026-11-04 15:13:26] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:13:35] Parked Spectrometer 
+[2026-11-04 15:14:53] Picked Up Spectrometer
+[2026-11-04 15:15:16] Spectrum recorded for vial B3 on Slot 2 at 10 mins
+[2026-11-04 15:15:37] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:15:46] Parked Spectrometer 
+[2026-11-04 15:17:37] Picked Up Spectrometer
+[2026-11-04 15:18:00] Spectrum recorded for vial B4 on Slot 2 at 10 mins
+[2026-11-04 15:18:22] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:18:31] Parked Spectrometer 
+[2026-11-04 15:19:49] Picked Up Spectrometer
+[2026-11-04 15:20:13] Spectrum recorded for vial B3 on Slot 2 at 15 mins
+[2026-11-04 15:20:34] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:20:43] Parked Spectrometer 
+[2026-11-04 15:22:34] Picked Up Spectrometer
+[2026-11-04 15:22:57] Spectrum recorded for vial B4 on Slot 2 at 15 mins
+[2026-11-04 15:23:19] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:23:28] Parked Spectrometer 
+[2026-11-04 15:24:46] Picked Up Spectrometer
+[2026-11-04 15:25:09] Spectrum recorded for vial B3 on Slot 2 at 20 mins
+[2026-11-04 15:25:30] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:25:39] Parked Spectrometer 
+[2026-11-04 15:27:30] Picked Up Spectrometer
+[2026-11-04 15:27:53] Spectrum recorded for vial B4 on Slot 2 at 20 mins
+[2026-11-04 15:28:15] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:28:24] Parked Spectrometer 
+[2026-11-04 15:29:42] Picked Up Spectrometer
+[2026-11-04 15:30:05] Spectrum recorded for vial B3 on Slot 2 at 25 mins
+[2026-11-04 15:30:26] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:30:35] Parked Spectrometer 
+[2026-11-04 15:32:26] Picked Up Spectrometer
+[2026-11-04 15:32:49] Spectrum recorded for vial B4 on Slot 2 at 25 mins
+[2026-11-04 15:33:11] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:33:20] Parked Spectrometer 
+[2026-11-04 15:34:38] Picked Up Spectrometer
+[2026-11-04 15:35:01] Spectrum recorded for vial B3 on Slot 2 at 30 mins
+[2026-11-04 15:35:22] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:35:31] Parked Spectrometer 
+[2026-11-04 15:37:22] Picked Up Spectrometer
+[2026-11-04 15:37:46] Spectrum recorded for vial B4 on Slot 2 at 30 mins
+[2026-11-04 15:38:08] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:38:17] Parked Spectrometer 
+[2026-11-04 15:39:35] Picked Up Spectrometer
+[2026-11-04 15:39:58] Spectrum recorded for vial B3 on Slot 2 at 35 mins
+[2026-11-04 15:40:19] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:40:28] Parked Spectrometer 
+[2026-11-04 15:42:19] Picked Up Spectrometer
+[2026-11-04 15:42:43] Spectrum recorded for vial B4 on Slot 2 at 35 mins
+[2026-11-04 15:43:04] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:43:13] Parked Spectrometer 
+[2026-11-04 15:44:31] Picked Up Spectrometer
+[2026-11-04 15:44:54] Spectrum recorded for vial B3 on Slot 2 at 40 mins
+[2026-11-04 15:45:16] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:45:25] Parked Spectrometer 
+[2026-11-04 15:47:16] Picked Up Spectrometer
+[2026-11-04 15:47:39] Spectrum recorded for vial B4 on Slot 2 at 40 mins
+[2026-11-04 15:48:01] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:48:10] Parked Spectrometer 
+[2026-11-04 15:49:28] Picked Up Spectrometer
+[2026-11-04 15:49:51] Spectrum recorded for vial B3 on Slot 2 at 45 mins
+[2026-11-04 15:50:12] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:50:21] Parked Spectrometer 
+[2026-11-04 15:52:12] Picked Up Spectrometer
+[2026-11-04 15:52:35] Spectrum recorded for vial B4 on Slot 2 at 45 mins
+[2026-11-04 15:52:57] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:53:06] Parked Spectrometer 
+[2026-11-04 15:54:24] Picked Up Spectrometer
+[2026-11-04 15:54:47] Spectrum recorded for vial B3 on Slot 2 at 50 mins
+[2026-11-04 15:55:09] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:55:18] Parked Spectrometer 
+[2026-11-04 15:57:09] Picked Up Spectrometer
+[2026-11-04 15:57:32] Spectrum recorded for vial B4 on Slot 2 at 50 mins
+[2026-11-04 15:57:54] Washed Spectrometer Probe 3 Times
+[2026-11-04 15:58:03] Parked Spectrometer 
+[2026-11-04 15:59:21] Picked Up Spectrometer
+[2026-11-04 15:59:44] Spectrum recorded for vial B3 on Slot 2 at 55 mins
+[2026-11-04 16:00:06] Washed Spectrometer Probe 3 Times
+[2026-11-04 16:00:15] Parked Spectrometer 
+[2026-11-04 16:02:06] Picked Up Spectrometer
+[2026-11-04 16:02:29] Spectrum recorded for vial B4 on Slot 2 at 55 mins
+[2026-11-04 16:02:51] Washed Spectrometer Probe 3 Times
+[2026-11-04 16:03:00] Parked Spectrometer 
+[2026-11-04 16:04:18] Picked Up Spectrometer
+[2026-11-04 16:04:41] Spectrum recorded for vial B3 on Slot 2 at 60 mins
+[2026-11-04 16:05:03] Washed Spectrometer Probe 3 Times
+[2026-11-04 16:05:12] Parked Spectrometer 
+[2026-11-04 16:07:03] Picked Up Spectrometer
+[2026-11-04 16:07:26] Spectrum recorded for vial B4 on Slot 2 at 60 mins
+[2026-11-04 16:07:48] Washed Spectrometer Probe 3 Times
+[2026-11-04 16:07:57] Parked Spectrometer 
+[2026-11-04 16:08:08] Picked Up Vacuum Gripper
+[2026-11-04 16:08:26] Put Lid to Samples
+[2026-11-04 16:08:46] Put Lid to Solvent
+[2026-11-04 16:08:54] Parked Vacuum Gripper
+[2026-11-04 16:08:54] Experiment Completed Successfully!!

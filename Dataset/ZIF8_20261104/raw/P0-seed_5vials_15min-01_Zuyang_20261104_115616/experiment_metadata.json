@@ -1,0 +1,13 @@
+{
+  "experiment_id": "P0-seed_5vials_15min-01_Zuyang_20261104_115616",
+  "experiment_name": "P0-seed_5vials_15min-01",
+  "operator_name": "Zuyang",
+  "target_compound": "ZIF-8",
+  "project_id": null,
+  "sample_type": "MOF_synthesis",
+  "solvent": "triethylamine/methanol",
+  "temperature_c": 25,
+  "notes": "Reaction-aware BO batch 1 (P0-seed_5vials_15min-01)",
+  "created_at": "2026-11-04T11:56:16.025020",
+  "instrument_serial": 2
+}

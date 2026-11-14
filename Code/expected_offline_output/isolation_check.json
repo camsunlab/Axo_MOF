@@ -1,0 +1,8 @@
+{
+  "network_connections_blocked": true,
+  "hardware_imports_blocked": true,
+  "hardware_modules_loaded": [],
+  "input_hashes_unchanged": true,
+  "physical_experiments_executed": false,
+  "result": "passed"
+}
