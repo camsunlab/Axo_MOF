@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: science_jubilee
+Version: 0.3.2+axo
+Summary: Local Axo_MOF fork of science-jubilee (Double_Syringe, Vacuum_Gripper, Oceandirect_axo, optimization, ...)
+Requires-Python: >=3.10

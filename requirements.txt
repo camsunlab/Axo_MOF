@@ -1,0 +1,40 @@
+# Axo_MOF Python requirements
+#
+# Install (from the repo root, with the uv-managed .venv):
+#   uv pip install --python .venv/Scripts/python.exe -r requirements.txt
+#
+# With plain pip in an activated environment:
+#   pip install -r requirements.txt
+
+# --- Local science_jubilee fork (Code/src), editable install ---
+-e ./Code
+
+# --- Machine communication ---
+requests>=2.31
+
+# --- Scientific computing ---
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+pandas>=2.0
+
+# --- Visualization ---
+matplotlib>=3.7
+python-ternary>=1.0.8
+
+# --- Notebooks ---
+ipykernel>=6.0
+ipywidgets>=8.0
+
+# --- NOT installable from PyPI ---
+# Ocean Insight OceanDirect SDK (Python module `oceandirect`), required by
+# science_jubilee.tools.Oceandirect_axo (the spectrometer tool).
+# Proprietary (received from Ocean Insight); the lab keeps it in the private repo
+# camsunlab/ClownFish. Clone it next to Axo_MOF, then from the Axo_MOF root (Git Bash):
+#   SP=.venv/Lib/site-packages/oceandirect; mkdir -p $SP/lib
+#   cp ../ClownFish/{__init__,OceanDirectAPI,od_logger,sdk_properties}.py $SP/
+#   cp ../ClownFish/OceanDirect.dll $SP/lib/
+# (sdk_properties.py expects the DLL at oceandirect/lib/OceanDirect.dll.)
+#
+# Raspberry Pi camera server only (Code/src/science_jubilee/tools/piserver), install on the Pi:
+#   flask, picamera2
