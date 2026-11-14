@@ -1,0 +1,82 @@
+{
+  "A1": {
+    "metal_precursor": {
+      "name": "Zn+2",
+      "volume_ml": 0.4
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 4.9
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 2.7
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  },
+  "A2": {
+    "metal_precursor": {
+      "name": "Zn+2",
+      "volume_ml": 7.9
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 0.1
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 0
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  },
+  "A3": {
+    "metal_precursor": {
+      "name": "Zn+2",
+      "volume_ml": 0.1
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 0.1
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 7.8
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  },
+  "A4": {
+    "metal_precursor": {
+      "name": "Zn+2",
+      "volume_ml": 3.8
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 0.5
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 3.7
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  },
+  "A5": {
+    "metal_precursor": {
+      "name": "Zn+2",
+      "volume_ml": 4.3
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 3.7
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 0
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  }
+}

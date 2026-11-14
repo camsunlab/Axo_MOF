@@ -1,0 +1,13 @@
+{
+  "experiment_id": "P2-bo_2vials_5min-01_Zuyang_20261104_132017",
+  "experiment_name": "P2-bo_2vials_5min-01",
+  "operator_name": "Zuyang",
+  "target_compound": "ZIF-8",
+  "project_id": null,
+  "sample_type": "MOF_synthesis",
+  "solvent": "triethylamine/methanol",
+  "temperature_c": 25,
+  "notes": "Reaction-aware BO batch 2 (P2-bo_2vials_5min-01)",
+  "created_at": "2026-11-04T13:20:17.467125",
+  "instrument_serial": 2
+}
