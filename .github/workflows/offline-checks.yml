@@ -1,0 +1,54 @@
+name: Offline checks
+
+on:
+  push:
+    branches: [main, revision-code-availability]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  software:
+    name: Software examples and notebook
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      MPLBACKEND: Agg
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12.14"
+          cache: pip
+          cache-dependency-path: Code/requirements-offline.txt
+      - name: Install pinned environment and package
+        run: |
+          python -m pip install -r Code/requirements-offline.txt
+          python -m pip install --no-deps --no-build-isolation -e ./Code
+          python -m pip check
+          python -m ipykernel install --sys-prefix --name python3
+      - name: Recorded-data analysis and reference outputs
+        run: |
+          python Code/tests/run_offline_isolation.py --output check_outputs/recorded
+          python Code/tests/verify_offline_outputs.py --output check_outputs/recorded
+      - name: Synthetic optimization and resume checks
+        run: python Code/tests/run_simulation_check.py --output check_outputs/simulation
+      - name: Integrated notebook with simulated devices
+        run: python Code/tests/notebook_dry_run.py Code/autonomous_mof_synthesis.ipynb check_outputs/notebook --truth fast --in-process
+
+  zif8-data:
+    name: ZIF-8 recorded data completeness
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12.14"
+      - name: Check four original batches and their checksums
+        run: python Code/prepare_zif8_upload.py --check-root .
