@@ -3,7 +3,7 @@
 ## Sources
 
 - Development base: `670bfb9a197e57f6bdc5dfb48caa50cc74ecdbd1` on `reaction-aware-orchestrator`.
-- Main branch checked: `ad12c0f3128cd682d23432d7000e0399b6591ee9`.
+- Main branch checked before integration: `ad12c0f3128cd682d23432d7000e0399b6591ee9`.
 - ZIF-8 hardware source and records: experiment-computer `Code.zip` supplied by the author.
 - Input-file hashes and publication edits: `zif8_code_provenance.json`.
 
@@ -17,6 +17,20 @@ spectrometer base-directory setting, cleared cell output and an opt-in refill
 accounting cell. Its chemistry, analysis settings, phase table and round limit
 are retained. The executed original and saved run records remain unchanged in
 `Dataset/ZIF8_20261104/`.
+
+## Published revision status
+
+The revision was merged into `main` at commit `522a439d1f0e86cae3a7822df3eabd8cb918452f`.
+[GitHub Actions run 43631912972](https://github.com/camsunlab/Axo_MOF/actions/runs/43631912972) completed successfully for that commit.
+The software-examples job checked the pinned installation, recorded-data
+reference results, synthetic optimization and the integrated notebook with
+simulated devices. The data job checked the four deposited ZIF-8 batches
+and their checksum manifest under `Dataset/ZIF8_20261104/raw/`.
+
+The selected ZIF-67 fixed-execution batches and ZIF-8 benchmark are deposited
+under `Dataset/ZIF67_fixed_execution/raw/` and `Dataset/ZIF8_benchmark/raw/`.
+The ZIF-8 checksum job covers the four-round campaign; it does not by itself
+validate those additional datasets or the manuscript conclusions.
 
 ## What the evidence supports
 
@@ -33,11 +47,11 @@ historical hardware run as having used the offline Python 3.12 environment.
 
 ## Tests for this revision
 
-The local validation record is in `revision_validation.json`. GitHub Actions
-also runs the software checks on the actual revision branch, pull-request merge
-and resulting main commit. Its second job requires the four ZIF-8 input folders
-and their checksum manifest. Until those inputs are supplied, that job must fail
-rather than treating summary tables as complete raw data.
+The pre-publication local validation record is retained unchanged in
+`revision_validation.json`. Its pending-upload and pending-remote-validation
+notes describe that earlier stage. The successful main-commit run linked
+above records the subsequent software and deposited-data checks. Future
+pull requests and main-branch changes rerun the configured checks.
 
 The local environment cannot start a separate Jupyter kernel because its socket
 operations are restricted. The integrated notebook is therefore tested with
@@ -45,10 +59,6 @@ operations are restricted. The integrated notebook is therefore tested with
 validation of the Jupyter browser interface or a fresh live-hardware experiment.
 
 ## Remaining scientific reproducibility work
-
-The supplied Code folder does not contain the ZIF-8 spectral input files. The
-author must upload those from the experiment computer using the documented
-unchanged-copy utility and confirm the archive check succeeds.
 
 The historical `run_reaction_aware_check.py` replay still overrides two recorded
 optimization scores: BO-2 B1 and BO-7 A3. Its comments identify the manually
@@ -64,7 +74,8 @@ not a current completion certificate.
 
 ## Release
 
-After the input files and tests are complete, merge the revision into main,
-create a release from that commit, archive the release as a new Zenodo version
-and use its returned version DOI. The older DOI `10.5281/zenodo.19664270` does not
-establish that this revision has already been archived.
+Create a release from the tested main commit after final repository cleanup,
+archive that release as a new Zenodo version and cite its returned version
+DOI. The older DOI `10.5281/zenodo.19664270` identifies the earlier archive;
+the successful GitHub checks do not establish that this revision has been
+archived on Zenodo.

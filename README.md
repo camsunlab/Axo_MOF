@@ -338,7 +338,7 @@ See [autonomous_mof_synthesis.ipynb](Code/autonomous_mof_synthesis.ipynb) for:
 - Progress visualization
 - Post-optimization analysis and plotting
 
-The earlier [multi_phase_bo_orchestration.ipynb](Code/multi_phase_bo_orchestration.ipynb) remains available as a generic phase-orchestration example.
+The earlier [multi_phase_bo_orchestration.ipynb](Code/multi_phase_bo_orchestration.ipynb) also uses `ReactionAwareBOLoop`, with ZIF-67 optical gates and two execution modes. The integrated notebook above retains the configuration used for the supplementary ZIF-8 experiment.
 
 ---
 
@@ -360,7 +360,7 @@ The earlier [multi_phase_bo_orchestration.ipynb](Code/multi_phase_bo_orchestrati
 | `Code/src/science_jubilee/utils/synthesis_plan.py` | Experiment plan generation |
 | `Code/autonomous_mof_synthesis.ipynb` | Integrated hardware notebook |
 | `Code/run_bo_optimization.py` | Hardware CLI with selectable policies |
-| `Code/mof_synthesis.ipynb`, `multi_phase_bo_orchestration.ipynb` | Earlier modular synthesis and generic orchestration notebooks |
+| `Code/mof_synthesis.ipynb`, `multi_phase_bo_orchestration.ipynb` | Earlier modular synthesis and ZIF-67 kinetics-aware orchestration notebooks |
 | `Code/bayesian.ipynb`, `gualtieri.ipynb`, `sampling.ipynb` | BO, kinetic analysis and initial sampling notebooks |
 | `Code/draft_synthesis_plan.json` | Example synthesis-plan configuration |
 | `Code/offline_demo.py`, `offline_demo.ipynb`, `simulate.py` | Recorded-data and synthetic-data examples |
