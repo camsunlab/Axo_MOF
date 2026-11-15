@@ -17,20 +17,27 @@ after round 2. The configurable 1-vial/2-min level was not reached.
 
 ## Input files
 
-The experiment-computer Code folder did not contain the original spectrum folders.
-They are expected below `raw/`, retaining the four folder names recorded in
-`run_records/decisions.csv`. Each batch needs its per-vial CSVs, `mof_recipes.json`,
-`operations_log.txt`, `experiment_metadata.json` and dark/white reference arrays.
+The original spectrum folders are provided below `raw/`, retaining the four
+folder names recorded in `run_records/decisions.csv`. Each batch includes its
+per-vial CSVs, `mof_recipes.json`, `operations_log.txt`,
+`experiment_metadata.json` and dark/white reference arrays.
+`raw/raw_data_manifest.json` records the deposited input checksums.
 
-To copy these inputs from the experiment computer without altering them:
+The data-completeness job in [GitHub Actions run 43631912972](https://github.com/camsunlab/Axo_MOF/actions/runs/43631912972)
+passed for main commit `522a439d1f0e86cae3a7822df3eabd8cb918452f`.
+
+## Maintaining the input archive
+
+For maintainers who need to restage the original inputs, use the copy utility
+with the actual source directory on the experiment computer:
 
 ```powershell
-python Code/prepare_zif8_upload.py --source "C:\Users\amg-admin\Desktop\Axo\Axo_MOF\spectrum_data\2026-11-04\Zuyang" --output zif8_data_upload
+python Code/prepare_zif8_upload.py --source "C:\path\to\original\ZIF8_batches" --output zif8_data_upload
 ```
 
-Upload the generated `zif8_data_upload/Dataset/` folder into the repository root.
 The utility excludes generated PNG plots and creates a checksum manifest.
-After uploading, check the actual deposited content with:
+The deposited inputs are already available; this restaging step is only for
+archive maintenance. To check the downloaded repository, run from its root:
 
 ```bash
 python Code/prepare_zif8_upload.py --check-root .
