@@ -114,7 +114,7 @@ class PhaseManager:
         reasons = []
 
         # Check minimum iterations
-        if iteration < phase.min_iterations:
+        if iteration + 1 < phase.min_iterations:
             return False, [f"Minimum iterations not reached ({iteration}/{phase.min_iterations})"]
 
         # Check maximum iterations (hard limit)
